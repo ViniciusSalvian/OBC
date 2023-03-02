@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: "Lora", serif;
+}
+
+@keyframes neon {
+  from {
+    filter: drop-shadow(0 0 0 var(--cor-neon));
+  }
+  to {
+    filter: drop-shadow(0 0 40px var(--cor-neon));
+  }
+}
+
+#player1,
+#player2 {
+  background-color: transparent;
+  border: ridge;
+  color: #ddd;
+}
+
+/* #players{
+  display: flex;
+  flex-basis: 100%;
+}
+#start{
+  display: flex;
+  flex-basis: 100%;
+}
+
+#preenchimento {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-basis: 100%;
+} */
+
+.cabecalho {
+  --cor-neon: red;
+
+  color: red;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: neon 3s alternate infinite ease-in-out;
+}
+
+input {
+  margin-right: 10px;
+}
+
+#start {
+  width: 5em;
+  height: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+h2 {
+  margin: 1rem;
+  /* display: none; */
+}
+
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+#gameBoard {
+  /* background-color: transparent; */
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem;
+  grid-template-rows: 6rem 6rem 6rem;
+  /* gap: .5rem; */
+  margin-bottom: 1.5rem;
+  max-width: 19rem;
+  /* visibility: hidden; */
+}
+
+#gameBoard span {
+  background-color: transparent;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+  text-shadow: 3px 3px red;
+}
+
+section,
+[data-region="0.0"],
+[data-region="0.1"],
+[data-region="0.2"],
+[data-region="1.0"],
+[data-region="1.1"],
+[data-region="1.2"] {
+  border-bottom: 4px solid #ddd;
+}
+
+section,
+[data-region="0.0"],
+[data-region="0.1"],
+[data-region="1.0"],
+[data-region="1.1"],
+[data-region="2.0"],
+[data-region="2.1"] {
+  border-right: 4px solid #ddd;
+}
+
+section,
+[data-region="0.2"],
+[data-region="1.2"],
+[data-region="2.2"] {
+  border-right: none;
+}
+
+section,
+[data-region="2.0"],
+[data-region="2.1"],
+[data-region="2.2"] {
+  border-bottom: none;
+}
+
+#gameBoard span.win {
+  --cor-neon: #2aaf5d;
+  text-shadow: 3px 3px #2aaf5d;
+  animation: neon 2s alternate infinite ease-in-out;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* #playAgain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  width: 10em;
+  height: 2.2rem;
+  cursor: pointer;
+}
+
+#playAgain:hover {
+  background-color: #2aaf5d;
+  transition: 0.3s;
+} */
+
+.maded {
+  text-decoration: underline;
+  margin-top: 0.25rem;
+  cursor: pointer;
+}
+
+.maded:hover {
+  color: white;
+}
+
+/*
+#players {
+    font-size: 1.25rem;
+    margin-bottom: 2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    max-width: 100%;
+    width: 300vh;
+    height: 100vh;
+    gap: 1em;
+    margin-bottom: 10rem;
+}
+
+#tabuleiro {
+    display: flex;
+   // /* background-color: red; //
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 80vh;
+    height: 80vh;
+    
+}
+
+.box {
+
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    width: 33.333%;
+    height: 33.333%;
+    flex: 1 1 auto;
+    cursor: pointer;
+}
+
+.win{
+    background-color: #2aaf5d;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6 {
+    border-bottom: 5px solid #666;
+}
+
+.box1,
+.box2,
+.box4,
+.box5,
+.box7,
+.box8 {
+    border-right: 5px solid #666;
+
+}
+
+*/
