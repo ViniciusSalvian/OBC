@@ -22,22 +22,6 @@
   color: #ddd;
 }
 
-/* #players{
-  display: flex;
-  flex-basis: 100%;
-}
-#start{
-  display: flex;
-  flex-basis: 100%;
-}
-
-#preenchimento {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  flex-basis: 100%;
-} */
-
 .cabecalho {
   --cor-neon: red;
 
@@ -63,8 +47,7 @@ input {
 }
 
 h2 {
-  margin: 1rem;
-  /* display: none; */
+  margin: 1rem;  
 }
 
 body {
@@ -78,14 +61,12 @@ body {
 }
 
 #gameBoard {
-  /* background-color: transparent; */
+ 
   display: grid;
   grid-template-columns: 6rem 6rem 6rem;
-  grid-template-rows: 6rem 6rem 6rem;
-  /* gap: .5rem; */
+  grid-template-rows: 6rem 6rem 6rem;  
   margin-bottom: 1.5rem;
   max-width: 19rem;
-  /* visibility: hidden; */
 }
 
 #gameBoard span {
@@ -140,21 +121,6 @@ section,
   cursor: pointer;
 }
 
-/* #playAgain {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  width: 10em;
-  height: 2.2rem;
-  cursor: pointer;
-}
-
-#playAgain:hover {
-  background-color: #2aaf5d;
-  transition: 0.3s;
-} */
-
 .maded {
   text-decoration: underline;
   margin-top: 0.25rem;
@@ -165,68 +131,3 @@ section,
   color: white;
 }
 
-/*
-#players {
-    font-size: 1.25rem;
-    margin-bottom: 2em;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    max-width: 100%;
-    width: 300vh;
-    height: 100vh;
-    gap: 1em;
-    margin-bottom: 10rem;
-}
-
-#tabuleiro {
-    display: flex;
-   // /* background-color: red; //
-    flex-wrap: wrap;
-    max-width: 100%;
-    width: 80vh;
-    height: 80vh;
-    
-}
-
-.box {
-
-    display: flex;
-    font-size: 3em;
-    justify-content: center;
-    align-items: center;
-    width: 33.333%;
-    height: 33.333%;
-    flex: 1 1 auto;
-    cursor: pointer;
-}
-
-.win{
-    background-color: #2aaf5d;
-}
-
-.box1,
-.box2,
-.box3,
-.box4,
-.box5,
-.box6 {
-    border-bottom: 5px solid #666;
-}
-
-.box1,
-.box2,
-.box4,
-.box5,
-.box7,
-.box8 {
-    border-right: 5px solid #666;
-
-}
-
-*/
